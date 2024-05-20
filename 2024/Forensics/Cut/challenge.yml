@@ -1,0 +1,27 @@
+name: "Cut"
+author: TheGriffyn
+category: Forensics
+description: |-
+    Too much data to look into? Or maybe not, just LOOK inside
+    
+    **Author**: [TheGriffyn](http://thegriffyn.vercel.app)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{H1d1ng_1n$id3_pcap_i5_n0t_u53ful_n0w}",
+        data: "case_sensitive"
+    }
+
+files:
+   - dist/cut.zip
+
+state: hidden
+version: "0.1"

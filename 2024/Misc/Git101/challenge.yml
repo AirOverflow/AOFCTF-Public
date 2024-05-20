@@ -1,0 +1,26 @@
+name: "Git101"
+author: TheFlash2k
+category: Misc
+description: |-
+  I found a weird looking git repository on the internet. But couldn't make much of it. Can you do something?
+
+  [Repo](https://github.com/theflash2k/AOF-CTF-GIT101)
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+  - {
+      type: "static",
+      content: "AOFCTF{g1t_1s_r3ally_us3ful_y0u_sh0uld_l34rn_1t}",
+      data: "case_sensitive"
+  }
+
+state: hidden
+version: "0.1"

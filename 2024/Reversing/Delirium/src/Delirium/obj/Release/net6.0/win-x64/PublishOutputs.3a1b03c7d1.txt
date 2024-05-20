@@ -1,0 +1,4 @@
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\publish\Delirium.exe
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\publish\Delirium.deps.json
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\publish\Delirium.runtimeconfig.json
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\publish\Delirium.dll

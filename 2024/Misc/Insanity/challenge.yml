@@ -1,0 +1,27 @@
+name: "Insanity"
+author: "TheFlash2k"
+category: Misc
+description: |-
+  When creating this absolutely amazing theme (huehue), I (unintentionally) left a flag somewhere.
+
+  I can't seem to find it either.
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+  - {
+      type: "static",
+      content: "AOFCTF{bu7_wh3r3_t0_pu7_7h1s?}",
+      data: "case_sensitive"
+  }
+
+state: hidden
+version: "0.1"

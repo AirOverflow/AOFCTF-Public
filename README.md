@@ -1,2 +1,4 @@
 # AOFCTF-Public
-All of AirOverflow CTF's setup files
+All of AirOverflow CTFs challenges, deployments, everything!
+
+---

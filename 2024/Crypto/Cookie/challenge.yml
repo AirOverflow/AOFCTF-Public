@@ -1,0 +1,29 @@
+name: "Cookie"
+author: TheGriffyn
+category: Crypto
+description: |- 
+  Adding `flag` and `input` with a little touch of AES salt grains makes the best cookies
+
+  **Author**: [TheGriffyn](https://thegriffyn.vercel.app)
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_crypto_cookie:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{n3v3r_hAv3_1_b33n_s0_haPpY_t0_g3t_s0m3_sw33t_c00k1e3_h3h3_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+      data: "case_sensitive"
+  }
+
+state: hidden
+version: "0.1"

@@ -1,0 +1,29 @@
+name: "compressed"
+author: TheFlash2k
+category: Reversing
+description: |-
+  Trust me, I compressed my code so hard to hide the actual implementation that
+  I don't think you can ever find it.
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+  - {
+      type: "static",
+      content: "AOFCTF{wh0_kn3w_c_4nd_pyth0n_w0uld_b3_th1s_p4inful}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/compressed.tar
+
+state: hidden
+version: "0.1"

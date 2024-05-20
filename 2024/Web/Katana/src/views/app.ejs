@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirOverflow</title>
+    <script src="/js/purify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        #points::after {
+            content: '🔥'
+        }
+    </style>
+</head>
+<body data-bs-theme="dark" class="pt-3">
+    <div class="container">
+    <h1 class="text-center mt-3 mb-4">Welcome to AirOverflow CTF</h1>
+    <div class="container d-flex flex-column justify-content-center align-items-center border w-50 p-4 rounded">
+        <form id="visit-form" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex align-items-center mb-1">
+                <p class="fw-bold mb-0">Username:</p>
+                <span id="user" class="ms-2">Guest</span>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+                <p class="fw-bold mb-0">Points:</p>
+                <span id="points" class="ms-2">0</span>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+                <p class="fw-bold mb-0">Position:</p>
+                <span id="position" class="ms-2">99th</span>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    for(var [key, value] of urlParams) {
+        if(document.getElementById(key))
+        {
+            document.getElementById(key).innerText = `${value}`;
+        }
+        else if (window.AOFCTF24)
+        {
+            document.write("unidentified keys <br />");
+            document.write(`${key} = ${value} <br />`);
+        }
+        else
+        {
+            key = DOMPurify.sanitize(key);
+            document.write(`<span style='color: red'>${key} not found in the document</span><br />`);
+        }
+    }
+</script>
+</html>

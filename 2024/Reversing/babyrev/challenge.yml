@@ -1,0 +1,26 @@
+name: "babyrev"
+author: hexamine22
+category: Reversing
+description: |-
+    have you heard of pyinstaller?
+    
+    **Author**: [hexamine](https://github.com/hexamine22)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{rc4_go_brrrrrr}",
+        data: "case_sensitive"
+    }
+files:
+   - dist/chal.exe
+
+state: hidden
+version: "0.1"

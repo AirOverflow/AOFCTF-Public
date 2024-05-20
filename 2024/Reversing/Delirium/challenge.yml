@@ -1,0 +1,26 @@
+name: "Delirium"
+author: hexamine22
+category: Reversing
+description: |-
+    i feel delirious
+    This challenge requires .NET 6.0
+    **Author**: [hexamine](https://github.com/hexamine22)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{4r3_y0u_r34dy_70_runnnnn????}",
+        data: "case_sensitive"
+    }
+files:
+   - dist/Delirium.zip
+
+state: hidden
+version: "0.1"

@@ -1,0 +1,1 @@
+AOFCTF{test}

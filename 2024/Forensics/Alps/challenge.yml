@@ -1,0 +1,27 @@
+name: "Alps"
+author: ahmedjalil
+category: Forensics
+description: |-
+    Try and find the flag.
+
+    [Download file](https://drive.google.com/file/d/1pe3pUG-ib_F5JCegodG0OtU83JWLuwzI/view?usp=drivesdk)
+
+    **Author**: [AhmedJalil](https://www.linkedin.com/in/ahmedcys/)
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{3905d7917f2b3429490b01cfb60d8f5b}",
+        data: "case_sensitive"
+    }
+
+state: hidden
+version: "0.1"

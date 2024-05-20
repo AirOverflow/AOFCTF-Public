@@ -1,0 +1,27 @@
+name: "easyrsa"
+author: TheGriffyn
+category: Crypto
+description: |-
+    This is probably the easiest RSA you will ever encounter :)
+
+    **Author**: [TheGriffyn](http://thegriffyn.vercel.app)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{rSa_iS_v3rY_eZzzZZZzzZ_mY_b0y}",
+        data: "case_insensitive"
+    }
+
+files:
+   - dist/encrypted.txt
+
+state: hidden
+version: "0.1"

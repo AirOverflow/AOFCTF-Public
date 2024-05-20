@@ -1,0 +1,34 @@
+name: "Ba-Sing-Se"
+author: TheFlash2k
+category: Misc
+description: |- 
+  They say that the Walls of Ba-Sing-Se are impenetrable.
+  
+  Can you penetrate them?
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_misc_basingse:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{b4_s1ng_s3_h4s_b33n_c0nqu3r3d_b4ck_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/ba-sing-se.py
+
+state: hidden
+version: "0.1"

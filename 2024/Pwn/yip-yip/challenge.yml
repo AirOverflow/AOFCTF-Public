@@ -1,0 +1,34 @@
+name: "yip-yip"
+author: TheFlash2k
+category: Pwn
+
+description: |-
+  I made __(for the fourth time now)__ a user registration software. I made sure that there aren't any overflows now.
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_pwn_yipyip:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{0ff_bY_0n3s_d0_l34k_m3m0ry_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/yip-yip.tar
+
+state: hidden
+version: "0.1"

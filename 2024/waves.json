@@ -1,0 +1,58 @@
+{	"notify-discord": true,
+	"force-deploy": true,
+	"wave-1": {
+		"challenges": [
+			"Birdy101",
+			"rop101",
+			"naughty",
+			"Illusion",
+			"Copperware",
+			"Keygen",
+			"Sanity",
+			"Insanity",
+			"Git101",
+			"Ba-Sing-Se",
+			"leakeD",
+			"easyrsa",
+			"Katana",
+			"Feedback",
+			"QrZilla",
+			"Arose",
+			"Broke",
+			"camouflaged",
+			"Alps",
+			"Cut"
+		],
+		"message": "Wave 1 challenges have been released. Next wave will be released on {NEXT_TIMESTAMP} ({NEXT_TIMESTAMP:Asia/Karachi})!",
+		"timestamp": 1714219200
+	},
+	"wave-2": {
+		"challenges": [
+			"babysbx",
+			"Popeye",
+			"babyrev",
+			"compressed",
+			"Delirium",
+			"shush",
+			"DancingSquares",
+			"Blurry",
+			"whoami",
+			"Little Nightmare",
+			"Streamify",
+		],
+		"message": "Wave 2 challenges have been released. Last wave will be released on {NEXT_TIMESTAMP} ({NEXT_TIMESTAMP:Asia/Karachi})!",
+		"timestamp": 1714240800
+	},
+	"wave-3": {
+		"challenges": [
+			"Panel",
+			"yip-yip",
+			"MusicOverflow2077",
+			"Cookie",
+			"Recovery",
+			"Doc{?}"
+		],
+		"message": "Final wave  has been released. Good luck!",
+		"timestamp": 1714294800
+	}
+}

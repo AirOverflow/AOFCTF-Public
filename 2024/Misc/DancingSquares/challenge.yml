@@ -1,0 +1,28 @@
+name: "DancingSquares"
+author: TheGriffyn
+category: Misc
+description: |-
+    What's a robot's favorite dance move?
+    __The algorithm!__
+    
+    **Author**: [TheGriffyn](http://thegriffyn.vercel.app)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{dAnc1nG_w1tH_y0uR_gH0$t}",
+        data: "case_sensitive"
+    }
+
+files:
+   - dist/dancewithme.zip
+
+state: hidden
+version: "0.1"

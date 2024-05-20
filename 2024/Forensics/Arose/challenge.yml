@@ -1,0 +1,25 @@
+name: "Arose"
+author: TheGriffyn
+category: Forensics
+description: |-
+    One of my friend died yesterday and as his last wish, he asked me to look for something he deleted once. Can you do it?
+    **Author**: [TheGriffyn](http://thegriffyn.vercel.app)
+    [Download file](https://drive.google.com/drive/folders/1S1iDlj3VoOH2FupUXEMNzf0sK9AesyvW?usp=sharing)
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{1_Th0ught_Y0u_D1dnt_k33p_d3l3ted_ph0t0s_whaaa_d1sc0rd!??!!?}",
+        data: "case_sensitive"
+    }
+
+state: hidden
+version: "0.1"

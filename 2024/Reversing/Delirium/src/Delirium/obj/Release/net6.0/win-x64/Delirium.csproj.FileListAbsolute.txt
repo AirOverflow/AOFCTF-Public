@@ -1,0 +1,12 @@
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\Delirium.exe
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\Delirium.deps.json
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\Delirium.runtimeconfig.json
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\bin\Release\net6.0\win-x64\Delirium.dll
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\Delirium.GeneratedMSBuildEditorConfig.editorconfig
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\Delirium.AssemblyInfoInputs.cache
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\Delirium.AssemblyInfo.cs
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\Delirium.csproj.CoreCompileInputs.cache
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\Delirium.dll
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\refint\Delirium.dll
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\Delirium.genruntimeconfig.cache
+E:\VisualStudio\Projects\ctfdev\airoverflowctf\delirium\Delirium\obj\Release\net6.0\win-x64\ref\Delirium.dll

@@ -1,0 +1,31 @@
+name: "QrZilla"
+author: "rootxran"
+category: Web
+description: |-
+    In 2024, Find out why I am recreating QR generator and scanner.
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+
+    **Author**: [rootxran](https://blog.rootxran.com/)
+
+value: 500
+type: container
+
+extra:
+    initial: 500
+    decay: 10
+    minimum: 100
+    image: qrzilla_web:latest
+    port: 8899
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "regex",
+        content: "AOFCTF{n1c3_y0u_g0t_th4t_sp0t_g00d_j0b_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+        data: "case_sensitive",
+    }
+
+state: hidden
+version: "0.1"

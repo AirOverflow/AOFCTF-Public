@@ -1,0 +1,31 @@
+name: "Streamify"
+author: "rootxran"
+category: Web
+description: |-
+    Rootxran recently started streaming on twitch platform. Check his profile and give your suggestions. I would wait for your suggestions
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+    
+    **Author**: [rootxran](https://blog.rootxran.com/)
+
+value: 500
+type: container
+
+extra:
+    initial: 500
+    decay: 10
+    minimum: 100
+    image: streamify_web:latest
+    port: 8899
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "regex",
+        content: "AOFCTF{d3s3r1al1z4ti0n_4ttack5_4r3_v3ry_d4ng3r0us_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+        data: "case_sensitive",
+    }
+
+state: hidden
+version: "0.1"

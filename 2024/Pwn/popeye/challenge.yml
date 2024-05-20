@@ -1,0 +1,32 @@
+name: "Popeye"
+author: TheFlash2k
+category: Pwn
+description: |-
+  Popeye loves eating Spinach to make his *ARM* strong. He also loves Leeks.
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_pwn_popeye:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{th3se_arm_ret2sys_ar3_3asy_w1tH_th3s3_w1n_g4dg3ts_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/popeye.tar
+
+state: hidden
+version: "0.1"

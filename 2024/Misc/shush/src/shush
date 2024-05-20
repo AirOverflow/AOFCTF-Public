@@ -1,0 +1,29 @@
+#!/usr/local/bin/python
+from subprocess import Popen, PIPE, STDOUT
+
+INVALID_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\\"\'`:{}[]()._,<>|'
+MAX_CHARS_ALLOWED = 5
+OUTPUT_BAN = ["CTF", "FLAG", "root", "ctf-player"]
+PROMPT = "sh[ush]$ "
+
+while True:
+    try:
+        __input = input(PROMPT)
+        if any(c in INVALID_CHARS for c in __input):
+            raise Exception('INVALID_CHARS_ERROR: Command contains invalid characters')
+
+        if len(__input) >= MAX_CHARS_ALLOWED:
+            raise Exception(f"LENGTH_ERROR: Command is longer than {MAX_CHARS_ALLOWED} characters")
+
+        p = Popen(["/bin/sh", "-c", __input], stdout=PIPE, stderr=STDOUT)
+        output = p.stdout.read().decode('utf-8')
+
+        if any(c in INVALID_CHARS for c in output):
+            raise Exception('INVALID_CHARS_ERROR: Command output contains invalid characters')
+
+        if any(banned.lower() in output.lower() for banned in OUTPUT_BAN):
+            raise Exception('OUTPUT_ERROR: Command output contains banned characters')
+        
+        print(output)
+    except Exception as E:
+        print(E)

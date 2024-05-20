@@ -1,0 +1,33 @@
+name: "Keygen"
+author: TheFlash2k
+category: Reversing
+description: |-
+  I wrote a commercially acceptable license checker. No keygen exists for it.
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_rev_keygen:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{pr3d3f1n3d_k3y5_4nd_a_k3yg3N_[6-8a-eE-R]{10}_[0-9a-zA-Z]{8}}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/keygen.tar
+
+state: hidden
+version: "0.1"

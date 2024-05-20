@@ -1,0 +1,35 @@
+name: "rop101"
+author: TheFlash2k
+category: Pwn
+description: |-
+  I was told ropping is pretty easy. (And it is tbh.)
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+value: 500
+type: dynamic
+
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_pwn_rop101:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{s1gr0pp1ng_1s_34sy__[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+      data: "case_insensitive"
+  }
+
+files:
+  - dist/rop101.tar
+
+state: hidden
+version: "0.1"

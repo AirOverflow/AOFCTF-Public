@@ -1,0 +1,34 @@
+name: "babysbx"
+author: TheFlash2k
+category: Pwn
+description: |-
+  Yet another sandbox escape. However, is it really that easy?
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_pwn_babypwn:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+image: ./src
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{n0_m0v_n0_sysc4ll_n0_pr0bl3m_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/babysbx.tar
+
+state: hidden
+version: "0.1"

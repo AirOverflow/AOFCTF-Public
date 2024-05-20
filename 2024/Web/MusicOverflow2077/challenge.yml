@@ -1,0 +1,31 @@
+name: "MusicOverflow 2077"
+author: "rootxran"
+category: Web
+description: |-
+    Its time to energize ourself and feel like we are in 2077. Overflow yourself with this music playlist
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+
+    **Author**: [rootxran](https://blog.rootxran.com/)
+
+value: 500
+type: container
+
+extra:
+    initial: 500
+    decay: 10
+    minimum: 100
+    image: musicoverflow2077_web:latest
+    port: 80
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "regex",
+        content: "AOFCTF{H0p3_y0u_h4v3_enj0y3d_th0s3_s0ng5_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+        data: "case_sensitive",
+    }
+
+state: hidden
+version: "0.1"

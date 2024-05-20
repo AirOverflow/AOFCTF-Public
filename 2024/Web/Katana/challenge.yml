@@ -1,0 +1,34 @@
+name: "Katana"
+author: "rootxran"
+category: Web
+description: |-
+    What can possibly go wrong. Try Harder
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+
+    **Author**: [rootxran](https://blog.rootxran.com/)
+value: 500
+type: container
+
+extra:
+    initial: 500
+    decay: 10
+    minimum: 100
+    image: katana_web:latest
+    port: 3000
+    command: ""
+    volumes: ""
+    ctype: web
+
+flags:
+    - {
+        type: "regex",
+        content: "AOFCTF{y0u_ar3_G00d_4t_d0m_cl0bb3r1ng_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+        data: "case_sensitive",
+    }
+
+files:
+   - dist/katana.zip
+
+state: hidden
+version: "0.1"

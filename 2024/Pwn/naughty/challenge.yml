@@ -1,0 +1,33 @@
+name: "naughty"
+author: TheFlash2k
+category: Pwn
+description: |-
+  Santa already has your name on the naughty list.
+
+  **Author**: [TheFlash2k](https://theflash2k.me)
+
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+  image: aofctf_pwn_naughty:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "regex",
+      content: "AOFCTF{n4ughty_l1s7_n07_s0_n4ughty_4ft3r_4ll_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/naughty.tar
+
+state: hidden
+version: "0.1"

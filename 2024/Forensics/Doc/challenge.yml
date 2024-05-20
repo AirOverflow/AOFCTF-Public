@@ -1,0 +1,31 @@
+name: "Doc{?}"
+author: ahmedjalil
+category: Forensics
+description: |-
+    Try and find the flag.
+    [Download file](https://docs.google.com/document/d/1lI03e_t6hdW-bJFQePrmWU_odFiUSeJQ)
+
+    > Password for archive: *infected*
+
+    **Author**: [AhmedJalil](https://www.linkedin.com/in/ahmedcys/)
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{0_0-c0d3_in_word??}",
+        data: "case_sensitive"
+    }
+
+files:
+   - dist/vconfidential.7z
+
+state: hidden
+version: "0.1"

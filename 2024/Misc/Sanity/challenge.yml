@@ -1,0 +1,22 @@
+name: "Sanity"
+author: ""
+category: Misc
+description: |-
+  Join our discord for amazing details about the CTF
+
+  > And maybe a flag too?
+
+  https://discord.gg/6fSRGXntU9
+
+value: 50
+type: standard
+
+flags:
+  - {
+      type: "static",
+      content: "AOFCTF{d1sc0rd_fr33_fl4g_f0r_y0u}",
+      data: "case_sensitive"
+  }
+
+state: hidden
+version: "0.1"

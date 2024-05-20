@@ -1,0 +1,29 @@
+name: "Recovery"
+author: ahmedjalil
+category: Forensics
+description: |-
+    I forgot password to my account, could you help me recover it pleaseeeeeeeeee? :(
+
+    Format: `AOFCTF{account-name_password}`
+
+    [Download file](https://drive.google.com/file/d/1swhfthIOsvhpagvdK0PSURSbhjrL80fF/view?usp=sharing)
+
+    **Author**: [AhmedJalil](https://www.linkedin.com/in/ahmedcys/)
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{student_P@ssw0rd}",
+        data: "case_sensitive"
+    }
+
+state: hidden
+version: "0.1"

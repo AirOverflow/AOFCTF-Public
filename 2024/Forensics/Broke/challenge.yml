@@ -1,0 +1,28 @@
+name: "Broke"
+author: TheGriffyn
+category: Forensics
+description: |-
+    I am not regular broke, I'm high class broke
+    __I am Broqué__
+    
+    **Author**: [TheGriffyn](http://thegriffyn.vercel.app)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOF{this_was_an_easy_challenge_haha_193826}",
+        data: "case_insensitive"
+    }
+
+files:
+   - dist/broke.zip
+
+state: hidden
+version: "0.1"

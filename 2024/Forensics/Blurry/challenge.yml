@@ -1,0 +1,27 @@
+name: "Blurry"
+author: TheGriffyn
+category: Forensics
+description: |-
+    I accidentally forgot to bring my glasses, can you help me view this QR?
+    
+    **Author**: [TheGriffyn](http://thegriffyn.vercel.app)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{g00d_j0b_d3cod1ng_tH1s_eXtr3m31y_sTup1d_qR}",
+        data: "case_sensitive"
+    }
+
+files:
+   - dist/chall.png
+
+state: hidden
+version: "0.1"

@@ -1,0 +1,25 @@
+name: "leakeD"
+author: "abdullahzamir"
+category: Crypto
+description: |-
+    Accidentely leaked some bits of the private key
+
+    **Author**: abdullahzamir
+value: 100
+type: dynamic
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{n0_hArm_in_L3eaking_bits}",
+        data: "case_sensitive"
+    }
+
+files:
+    - dist/output.txt
+state: hidden
+version: "0.1"

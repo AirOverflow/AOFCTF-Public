@@ -1,0 +1,30 @@
+name: "Feedback"
+author: "rootxran"
+category: Web
+description: |-
+    Your feedback is very important. It's harmless though.
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start."
+
+    **Author**: [rootxran](https://blog.rootxran.com/)
+value: 500
+type: container
+
+extra:
+    initial: 500
+    decay: 10
+    minimum: 100
+    image: feedback_web:latest
+    port: 8899
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "regex",
+        content: "AOFCTF{G00d_j0b_Y0u_hav3_succ3ssfu11y_d0n3_c0mm4nd_1nj3ct10n_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+        data: "case_sensitive",
+    }
+
+state: hidden
+version: "0.1"

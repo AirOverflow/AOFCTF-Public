@@ -1,0 +1,32 @@
+name: "Impurity"
+author: "abdullahzamir"
+category: Crypto
+description: |-
+    they say the right amout of impurities in steel makes it stronger, i took that advice and applied it to RSA
+
+    **Author**: abdullahzamir
+
+value: 500
+type: container
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+    image: aofctf_crypto_impurity:latest
+    port: 8000
+    command: ""
+    volumes: ""
+    ctype: tcp # can also be tcp in case of nc connection
+
+flags:
+    - {
+        type: "regex",
+        content: "AOFCTF{The_Sw0rdfather_wAs_sure_w1se_[6-8a-eE-R]{10}[0-9a-zA-Z]{8}}",
+        data: "case_sensitive",
+    }
+files:
+   - src/impurity.py
+
+state: visible
+version: "0.1"

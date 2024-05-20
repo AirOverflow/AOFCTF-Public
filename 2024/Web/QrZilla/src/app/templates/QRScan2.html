@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="static/images/favicon.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Scan QR</title>
+    <style>
+        .generate-form input[type="submit"] {
+            height: 40px;
+            width: 140px;
+            background-color: #3B5998;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    </style>
+</head>
+
+<body data-bs-theme="dark" class="pt-3">
+    <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black">QR Scanner</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-black" href="/">Generate</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="/qrscan">Scan</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mx-auto mx-auto d-flex justify-content-center align-items-center" style="height: 84%;">
+        <div class="row align-items-center justify-content-center border rounded-4 m-4 w-50" style="height:51%;">
+            <div class="col mx-4 my-4">
+                <h3>Scan QR</h3>
+                <form action="{{ url_for('qrscan') }}" method="POST">
+                    <input type="text" name="qr_link" class="form-control rounded-4 my-2" id="qr_link"
+                        placeholder="qr-link">
+                    <div class="generate-form">
+                        <input type="submit" class="btn btn-primary rounded-4 my-2 w-100" value="Scan">
+                    </div>
+                </form>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>QR Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="data:image/png;base64,{% block parameter1 %}{% endblock %}"
+                                alt="QR code does not exist. Don't play with application"></td>
+                        </tr>
+    <tr>
+        <td style="font-weight: 600;">QR Code Data</td>
+    </tr>
+    <tr>
+        <td><p>{% block parameter2 %}{% endblock %}</p></td>
+    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+          <p>Made with ❤️ by <a href="https://rootxran.com" target="_blank" style="text-decoration: none;">RootxRAN</a></p>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+name: "Illusion"
+author: hexamine22
+category: Reversing
+description: |-
+    I hate nanomites
+
+    **Author**: [hexamine](https://github.com/hexamine22)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 10
+  minimum: 100
+
+flags:
+    - {
+        type: "static",
+        content: "AOFCTF{n4n0m1735-4r3-fun-:)))))}",
+        data: "case_sensitive"
+    }
+files:
+   - dist/illusion
+
+state: hidden
+version: "0.1"
